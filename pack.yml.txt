@@ -1,0 +1,14 @@
+stacks:
+- heroku-20
+
+build:
+  builder: heroku/buildpacks:20
+  env:
+    BP_DEBUG: true
+
+app:
+  path: .
+
+runtime:
+  env:
+    PORT: 5000
